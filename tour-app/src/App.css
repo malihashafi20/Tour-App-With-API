@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.body-gradient {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(59,130,246,0.08), transparent),
+              radial-gradient(1000px 500px at 90% 20%, rgba(245,158,11,0.08), transparent);
+}
+
+.card {
+  @apply bg-white/90 backdrop-blur border border-black/5 shadow-soft rounded-xl2 hover:shadow-lg transition-shadow;
+}
